@@ -10,11 +10,10 @@ function getMedicine1() {
 function getMedicine2() {
   return new Promise(function(resolve, reject) {
     setTimeout(function() {
-			console.log("2 Received")
+	console.log("2 Received")
       resolve();
     }, 2000);
   });
 }
 
-getMedicine1()
-	.then(getMedicine2())
+getMedicine1().then(getMedicine2())
